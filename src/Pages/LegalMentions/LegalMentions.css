@@ -1,0 +1,32 @@
+#mentions {
+    background-color: var(--beige-50);
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    align-items: flex-start;
+    padding-inline: clamp(1.6rem, -0.3417rem + 8.2848vw, 9.6rem);
+    padding-top: clamp(12rem, 10.0583rem + 8.2848vw, 20rem);
+    padding-bottom: clamp(4rem, 1.1831rem + 9.0141vw, 12rem);
+
+    h2 {
+        font-family: "DM Sans";
+        color: var(--mid-blue);
+        font-weight: 900;
+    }
+
+    h3 {
+        color: var(--dark-blue);
+        font-weight: 700;
+        margin-top: clamp(2.4rem, 1.9383rem + 1.7181vw, 4rem);
+        text-align: left;
+    }
+
+    p {
+        color: var(--dark-blue);
+    }
+
+    nav {
+        position: fixed;
+    }
+}

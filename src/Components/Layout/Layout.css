@@ -1,0 +1,81 @@
+.modal {
+    display: flex;
+    flex-direction: column;
+    transition: top 0.9s;
+    background-color: var(--dark-blue);
+    background-blend-mode: multiply;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    position: relative;
+    left: 0;
+    padding-inline: clamp(1.6rem, -0.2462rem + 8.2051vw, 9.6rem);
+    padding-block: clamp(3.2rem, 2.9183rem + 0.9014vw, 4rem);
+    justify-content: space-between;
+    
+    
+    h3 {
+        color: var(--beige);
+        font-size: 2.4rem;
+        text-align: center;
+        margin-top: 9.6rem;
+
+        @media screen and (width<1025px) {
+            margin-top: clamp(4rem, 3.6117rem + 1.657vw, 5.6rem);
+        }
+    }
+    
+    #closeMenu {
+        cursor: pointer;
+        width: fit-content;
+        position: absolute;
+        right: 0;
+        margin-right: clamp(1.6rem, -0.3417rem + 8.2848vw, 12.4rem);
+    }
+    
+    #list {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-self: center;
+        width: fit-content;
+        min-height: 60vh;
+        padding-inline: 0rem;
+
+        @media screen and (width<500px) {
+            padding-inline: 3.2rem;
+        }
+    }
+    
+    #btm-links {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+        align-self: flex-end;
+        flex-wrap: nowrap;
+
+        @media screen and (width<500px) {
+            flex-wrap: wrap-reverse;
+            gap: 1.6rem;
+        }
+    }
+
+    #socials {
+        display: flex;
+        flex-wrap: nowrap;
+        height: 3.2rem;
+        width: fit-content;
+        gap: 1.6rem;
+
+        a img {
+            height: 3.2rem;
+        }
+
+        @media screen and (width<500px) {
+            width: 100vw;
+            justify-content: center;
+            gap: 3.2rem;
+        }
+    }
+}

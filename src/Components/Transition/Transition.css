@@ -1,0 +1,10 @@
+#transition {
+    video {
+        min-height: 100vh;
+        min-width: 100vw;
+        position: absolute;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+    }
+}

@@ -1,0 +1,166 @@
+@import url("https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css");
+
+@import url('https://fonts.googleapis.com/css2?family=Beth+Ellen');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800');
+
+* {
+  font-size: 62.5%;
+}
+
+:root {
+  font-family: "DM Sans", system-ui, sans-serif;
+
+  --dark-blue: #13102D;
+  --mid-blue: #3B2FA4;
+  --light-blue: #E0E6FF;
+  --beige: #FFFBDC;
+  --beige-50: #FFFBDC80;
+
+}
+
+html {
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  position: relative;
+}
+
+h1 {
+  font-family: "DM Sans";
+  color: var(--beige);
+  font-size: clamp(4rem, 2.0282rem + 6.3099vw, 9.6rem);
+  font-weight: 900;
+}
+
+h2 {
+  font-family: "Beth Ellen";
+  color: var(--dark-blue);
+  font-size: clamp(2.4rem, 1.8366rem + 1.8028vw, 4rem);
+  line-height: 160%;
+  text-align: center;
+}
+
+h3 {
+  font-family: "DM Sans";
+  color: var(--dark-blue);
+  font-size: clamp(1.6rem, 1.2117rem + 1.657vw, 3.2rem);
+  line-height: 112%;
+  font-weight: 500;
+}
+
+p {
+  font-family: "DM Sans";
+  font-size: 2rem;
+  line-height: 160%;
+
+  @media screen and (width<1025px) {
+    font-size: clamp(1.6rem, 1.3689rem + 0.9861vw, 2rem);
+  }
+}
+
+.quotes {
+  font-family: "EB Garamond";
+  font-style: italic;
+  font-weight: 400;
+  font-size: clamp(2rem, 1.7183rem + 0.9014vw, 2.8rem);
+  line-height: 130%;
+}
+
+a {
+  text-decoration: none;
+  color: var(--beige);
+  font-size: 2rem;
+  cursor: pointer;
+
+  @media screen and (width<500px) {
+    font-size: clamp(1.2rem, 0.1714rem + 4.5714vw, 1.6rem);
+  }
+}
+
+.btn {
+  z-index: 98;
+    background-color: var(--mid-blue);
+  color: var(--beige);
+  font-size: clamp(1.6rem, 1.4592rem + 0.4507vw, 2rem);
+  padding: 1.6rem 3.2rem;
+  border: none;
+  border-radius: 32px;
+  width: fit-content;
+}
+
+.btn-discover {
+  background-color: var(--mid-blue);
+  color: var(--beige);
+  font-size: clamp(1.6rem, 1.4592rem + 0.4507vw, 2rem);
+  padding: 1.6rem 3.2rem;
+  border: none;
+  border-radius: 32px;
+  width: fit-content;
+}
+
+/* .btn-next, .btn-close {
+  background-color: var(--mid-blue);
+  color: var(--beige);
+  font-size: clamp(1.6rem, 1.4592rem + 0.4507vw, 2rem);
+  padding: 1.6rem 3.2rem;
+  border: none;
+  border-radius: 32px;
+  width: fit-content;
+} */
+
+.btn:hover {
+  background-color: #3B2FA480;
+}
+
+.btn:after {
+  background-color: var(--mid-blue);
+}
+
+.div-btn-next {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: absolute;
+  bottom: 4rem;
+}
+
+.div-btn-discover {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: absolute;
+  bottom: 12rem;
+}
+
+.div-btn-close {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  position: static;
+  margin-bottom: 4rem;
+}
+
+/* 
+
+.btn-next {
+  z-index: 98;
+  writing-mode: vertical-rl;
+  text-orientation: sideways-right;
+}
+
+.btndiv {
+  width: 100%;
+  justify-content: center;
+  position: absolute;
+  bottom: 4rem;
+  height: fit-content;
+}
+  
+*/

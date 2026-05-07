@@ -1,0 +1,64 @@
+#chapter-detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    overflow-x: hidden;
+    background-color: var(--dark-blue);
+    padding-top: 16rem;
+    min-height: 100vh;
+    gap: 4rem;
+
+
+    h2,
+    h3 {
+        text-align: center;
+        color: var(--beige);
+        margin: 0;
+        padding-inline: 2.4rem;
+    }
+
+    h3 {
+        font-size: clamp(1.6rem, 1.4592rem + 0.4507vw, 2rem);
+        line-height: 160%;
+        color: var(--beige);
+    }
+
+    .quotes {
+        color: var(--beige);
+        padding-inline: clamp(2.4rem, -0.4169rem + 9.0141vw, 10.4rem);
+        text-align: center;
+    }
+
+    p, i {
+        color: var(--beige);
+    }
+
+    #titles {
+        display: flex;
+        flex-direction: column;
+        gap: 1.6rem;
+    }
+
+    #btn-play {
+        align-self: center;
+    }
+
+    #columns-content {
+        padding-inline: clamp(2.4rem, -0.4169rem + 9.0141vw, 10.4rem);
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: clamp(4rem, -0.4486rem + 8.3738vw, 9.6rem);
+        text-align: left;
+
+        @media screen and (width<750px) {
+            grid-template-columns: 1fr;
+            gap: 4rem;
+        }
+    }
+
+
+    @media screen and (width<1024px) {
+        gap: 6.4rem;
+    }
+}

@@ -1,0 +1,23 @@
+nav {
+    position: fixed;
+    display: flex;
+    width: 100vw;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: clamp(1.6rem, -0.3417rem + 8.2848vw, 12.4rem);
+    padding-block: clamp(1.6rem, 2.0117rem + 1.657vw, 3.2rem);
+    z-index: 95;
+
+    .modal {
+        top: -100vh;
+    }
+
+    img {
+        height: clamp(3.2rem, 2.9183rem + 0.9014vw, 4rem);
+    }
+
+    .body1 {
+        text-decoration: none;
+        color: var(--beige);
+    }
+}
