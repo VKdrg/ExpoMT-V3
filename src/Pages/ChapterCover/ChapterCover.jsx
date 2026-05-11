@@ -11,10 +11,6 @@ export const ChapterCover = ({ setCover }) => {
         setCover(prev => !prev);
     }
 
-    useEffect(() => {
-        console.log(playingTransition);
-    }, [])
-
     return (
         <>
             {playingTransition && <Transition />}

@@ -13,7 +13,6 @@ export const ChapterItem = ({ setModal }) => {
     }
 
     function handleClick() {
-        console.log(currentChapter);
         setCurrentChapter(prev => prev + 1)
         setPlayingTransition(true)
         if (currentChapter === 5) {
@@ -23,9 +22,6 @@ export const ChapterItem = ({ setModal }) => {
             nav('/chapter/' + id)
         }
     }
-
-    console.log('HIYA');
-
 
     return (
         <section id="chapter-item">

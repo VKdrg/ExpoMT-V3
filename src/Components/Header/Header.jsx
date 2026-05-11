@@ -13,7 +13,6 @@ export const Header = ({ triggerMenu }) => {
     const location = useLocation();
 
     useEffect(() => {
-        console.log('DAMNLA COULEUUUR');
         if (location.pathname === "/") {
             setIcon('/SVG/logoLightExtended.svg');
         }

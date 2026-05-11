@@ -26,8 +26,6 @@ export const Transition = () => {
         }, 10000);
     })
 
-    console.log('DAMN LA TRANSITION');
-
     return (
         <section id="transition">
             <video
