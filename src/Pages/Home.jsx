@@ -1,9 +1,8 @@
-import './Home.css';
 import { useEffect, useRef } from "react";
-import { Loader } from '../Components/Loader/Loader';
-import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router';
+import { Loader } from '../Components/Loader/Loader';
 import { UseApplication } from '../Components/Provider/Provider';
+import './Home.css';
 
 function DelayedVideo() {
     const videoRef = useRef(null);
