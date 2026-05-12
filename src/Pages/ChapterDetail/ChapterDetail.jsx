@@ -44,7 +44,7 @@ export const ChapterDetail = ({ setModal }) => {
             </div>
 
             <div className='div-btn-close'>
-                <button className="btn" id="btn-close" onClick={handleClick}>Fermer</button>
+                <button className="btn-main" id="btn-close" onClick={handleClick}>Fermer</button>
             </div>
         </section>
     )
