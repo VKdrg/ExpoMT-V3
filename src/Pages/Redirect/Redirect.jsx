@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import { UseApplication } from "../../Components/Provider/Provider";
 
 import "./Redirect.css";
-import '/src/index.css'
+import "/src/index.css";
 
 
 export const Redirect = () => {
@@ -20,7 +20,10 @@ export const Redirect = () => {
                 <h2>Nos valeurs sont le coeur battant de la Fondation.</h2>
                 <h3>Elles guident chaque action, chaque projet, et chaque réussite.</h3>
             </div>
-            <Link className="btn body1" to="https://fondation-solacroup-hebert.com/">Retour vers le site principal.</Link>
+            <div id="buttons">
+                <Link className="btn-main body1 btn-top" to="/">Retour vers l'accueil.</Link>
+                <Link className="btn-main body1" to="https://fondation-solacroup-hebert.com/">Retour vers le site principal.</Link>
+            </div>
         </ section>
     )
 }
