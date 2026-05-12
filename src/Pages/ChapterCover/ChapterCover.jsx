@@ -18,7 +18,7 @@ export const ChapterCover = ({ setCover }) => {
                 <h2>{chapters[currentChapter].title}</h2>
                 <h3>{chapters[currentChapter].subtitle}</h3>
                 <div className='div-btn-main'>
-                    <button className="btn" id='btn-item' onClick={handleClick}>Continuer</button>
+                    <button className="btn-main" id='btn-item' onClick={handleClick}>Continuer</button>
                 </div>
             </section>
         </>
