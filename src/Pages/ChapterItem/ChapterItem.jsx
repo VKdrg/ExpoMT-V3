@@ -8,6 +8,23 @@ export const ChapterItem = ({ setModal }) => {
     const nav = useNavigate()
     const { setPlayingTransition, chapters, currentChapter, setCurrentChapter } = UseApplication();
 
+    const [width, setWidth] = useState(window.innerWidth)
+
+    const handleResize = () => {
+        setWidth(window.innerWidth)
+        if (window.innerWidth < 1024) {
+            console.log('smol screen');
+            document.getElementById('illu-desktop').src = `${chapters[currentChapter].illuMobile}`;
+        } else {
+            document.getElementById('illu-desktop').src = `${chapters[currentChapter].illuDesktop}`;
+        }
+    }
+
+    useEffect(() => {
+        window.addEventListener("resize", handleResize)
+        return () => window.removeEventListener('resize', handleResize)
+    }, [])
+
     function handleDiscovery() {
         setModal(prev => !prev);
     }
@@ -18,27 +35,26 @@ export const ChapterItem = ({ setModal }) => {
         if (currentChapter === 5) {
             nav('/redirect')
         } else {
-            const id = Number(currentChapter) +1
+            const id = Number(currentChapter) + 1
             nav('/chapter/' + id)
         }
     }
 
     return (
         <section id="chapter-item">
-            <div className="div-btn-discover">
-                <button className="btn btn-discover" onClick={handleDiscovery}>Découvrir</button>
+            <div className="div-btn-top">
+                <button className="btn-top" onClick={handleDiscovery}>Découvrir</button>
             </div>
-            <div className='div-btn-next'>
-                <button className="btn btn-next" onClick={handleClick}>Continuer</button>
+            <div className='div-btn-main'>
+                <button className="btn" id="btn-next" onClick={handleClick}>Continuer</button>
             </div>
             <video
                 id="illu-desktop"
                 autoPlay
                 loop
                 muted
-            >
-                <source src={chapters[currentChapter].illuDesktop} />
-            </video>
+                src={chapters[currentChapter].illuDesktop}
+            />
         </section >
     )
 }

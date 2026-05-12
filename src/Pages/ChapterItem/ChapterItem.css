@@ -10,9 +10,9 @@
     
     video{
         object-fit: cover;
-        top: 0;
-        left: 0;
-        min-height: 100vh;
+        /* top: 0;
+        left: 0; */
+        height: 100vh;
     }
 
     .modal-detail {
