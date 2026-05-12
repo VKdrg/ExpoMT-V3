@@ -23,7 +23,7 @@ export const Transition = () => {
     useEffect(() => {
         setTimeout(() => {
             setPlayingTransition(false)
-        }, 10000);
+        }, 6000);
     })
 
     return (
@@ -33,7 +33,7 @@ export const Transition = () => {
                 muted
                 playsInline
             >
-                <source src="/illus/transition.mp4" type="video/mp4" />
+                <source src="/illus/Animation_TransitionV2.mp4" type="video/mp4" />
             </video>
         </section>
     )
