@@ -23,7 +23,7 @@ function DelayedVideo() {
             muted
             playsInline
         >
-            <source src="/illus/Animation-clin-d-oeil.mp4" type="video/mp4" />
+            <source src="/illus/Animation-clind'oeilV3.mp4" type="video/mp4" />
         </video>
     );
 }
@@ -44,7 +44,7 @@ export const Home = () => {
                     <h1>Marie-Thérèse<br />SOLACROUP</h1>
                     <p>UNE VIE AU SERVICE DES AUTRES</p>
                 </div>
-                <div className='div-btn-next'><Link className='btn btn-next' to={{pathname: '/chapter/'+ currentChapter }}>Continuer</Link></div>
+                <div className='div-btn-main'><Link className='btn-main' id="btn-chapter" to={{pathname: '/chapter/'+ currentChapter }}>Continuer</Link></div>
                 <DelayedVideo />
             </section>
         </>
