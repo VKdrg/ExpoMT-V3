@@ -9,6 +9,8 @@ export const ChapterDetail = ({ setModal }) => {
 
     function handleClick() {
         setModal(prev => !prev);
+        setIcon('/SVG/logoDarkReduced.svg');
+        document.getElementById('menu').style.color = "var(--dark-blue)";
     }
 
     useEffect(() => {
@@ -42,7 +44,7 @@ export const ChapterDetail = ({ setModal }) => {
             </div>
 
             <div className='div-btn-close'>
-                <button className="btn btn-close" onClick={handleClick}>Fermer</button>
+                <button className="btn" id="btn-close" onClick={handleClick}>Fermer</button>
             </div>
         </section>
     )
