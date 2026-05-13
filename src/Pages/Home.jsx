@@ -23,7 +23,7 @@ function DelayedVideo() {
             muted
             playsInline
         >
-            <source src="/illus/Animation-clind'oeilV3.mp4" type="video/mp4" />
+            <source src="/illus/Animation-clin-d-oeil.mp4" type="video/mp4" />
         </video>
     );
 }
