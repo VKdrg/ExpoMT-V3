@@ -13,7 +13,7 @@
                 "col2": "Dans ce foyer rigoureux, l’éducation est soignée mais stricte, parfois étouffante. Pourtant, déjà, Marie-Thérèse se distingue par son intelligence vive, sa liberté d’esprit et son énergie courageuse, qualités qui marqueront toute son existence.",
                 "col3": "À une époque où l’avenir des jeunes filles de bonne famille se limitait le plus souvent à devenir épouse et mère, elle choisira une autre voie : celle de l’indépendance et de l’engagement."
             },
-            "audio": "/audios/Air.mp3"
+            "audio": "/audios/chapitre1.mp3"
         },
         {
             "id": 2,
@@ -27,7 +27,7 @@
                 "col2": "Son courage a été salué par plusieurs décorations, parmi lesquelles la Médaille de la Reconnaissance française, la Médaille des épidémies, les Palmes d’argent, le titre de Chevalier du Mérite social, ainsi que des témoignages de reconnaissance du Secrétariat général de la Défense passive et diverses médailles d’honneur pour services rendus lors des bombardements en région parisienne.",
                 "col3": "Ces périodes de bouleversements ont profondément transformé la société et le rôle des femmes."
             },
-            "audio": ""
+            "audio": "/audios/chapitre2.mp3"
         },
         {
             "id": 3,
@@ -41,7 +41,7 @@
                 "col2": "À une époque où la politique était « une affaire d’hommes », elle impose sa voix, préside une commission et défend ses convictions avec détermination. Son engagement n’était pas symbolique : il ouvrait la voie à une représentation encore trop rare.",
                 "col3": "Aujourd’hui, les femmes occupent 42,4 % des sièges municipaux, mais seulement 20,8 % sont maires — preuve qu’il reste encore du chemin à parcourir."
             },
-            "audio": ""
+            "audio": "/audios/chapitre3.mp3"
         },
         {
             "id": 4,
@@ -55,7 +55,7 @@
                 "col2": "L’aérium marin Notre-Dame-du-Roc ouvre ses portes le 15 mai 1950 : agréé par la Sécurité sociale, il accueille chaque année jusqu’à 70 jeunes filles de 6 à 19 ans, venues trouver santé, éducation et réconfort au bord de la mer.",
                 "col3": "Convaincue du pouvoir de l’attention et de l’éducation, Marie-Thérèse ouvre sa maison à celles qui en avaient le plus besoin."
             },
-            "audio": ""
+            "audio": "/audios/chapitre4.mp3"
         },
         {
             "id": 5,
@@ -69,7 +69,7 @@
                 "col2": "Aujourd’hui, il retrouve sa force grâce à des figures comme Marie-Thérèse Solacroup. Son héritage a donné naissance à la Fondation Solacroup-Hébert, qui fait vivre sa vision et ses engagements. Préserver sa mémoire, c’est transmettre ce matrimoine précieux aux générations futures.",
                 "col3": "Elle lègue plus qu’un lieu : elle transmet un héritage féminin, souvent oublié des récits officiels."
             },
-            "audio": ""
+            "audio": "/audios/chapitre5.mp3"
         }
     ]
 }

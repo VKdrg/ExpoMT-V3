@@ -82,10 +82,10 @@ a {
 
 a, button {
   cursor: pointer;
+  z-index: 98;
 }
 
 button, .btn-main {
-  z-index: 98;
   background-color: var(--mid-blue);
   color: var(--beige);
   font-size: clamp(1.6rem, 1.4592rem + 0.4507vw, 2rem);
@@ -96,7 +96,8 @@ button, .btn-main {
 }
 
 .btn-top {
-  background-color: var(--light-blue);
+  background-color: #FAB47F;
+  /* border: 1px solid var(--orange); */
   color: var(--dark-blue);
 }
 
