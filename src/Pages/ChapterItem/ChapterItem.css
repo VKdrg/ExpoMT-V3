@@ -1,6 +1,6 @@
 #chapter-item {
     display: flex;
-    min-height: 100vh;
+    height: 100vh;
     min-width: 100vw;
     position: absolute;
     top: 0;

@@ -64,7 +64,7 @@ export const ChapterItem = ({ setModal }) => {
         setCurrentChapter(prev => prev + 1)
         setPlayingTransition(true)
         if (currentChapter === 5) {
-            nav('/#/redirect')
+            nav('/redirect')
         } else {
             const id = Number(currentChapter) + 1
             nav('/chapter/' + id)
