@@ -10,7 +10,6 @@ export const MenuItem = ({ chapter }) => {
     const { setCurrentChapter, setMenuBurger, setPlayingTransition } = UseApplication()
 
     const handleClick = () => {
-        console.log(chapter.id);
         setCurrentChapter(chapter.id)
         setMenuBurger(false)
         setPlayingTransition(false)
