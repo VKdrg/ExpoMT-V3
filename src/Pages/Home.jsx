@@ -1,8 +1,10 @@
-import { useEffect, useRef } from "react";
 import { Link } from 'react-router';
+import { useEffect, useRef } from "react";
 import { Loader } from '../Components/Loader/Loader';
 import { UseApplication } from '../Components/Provider/Provider';
+
 import './Home.css';
+
 
 function DelayedVideo() {
     const videoRef = useRef(null);
@@ -25,7 +27,7 @@ function DelayedVideo() {
         >
             <source src="/illus/Animation-clin-d-oeil.mp4" type="video/mp4" />
         </video>
-    );
+    )
 }
 
 export const Home = () => {
@@ -33,8 +35,8 @@ export const Home = () => {
     const { playing, setCurrentChapter, currentChapter } = UseApplication();
 
     useEffect(() => {
-        setCurrentChapter(1)
-    }, [])
+        setCurrentChapter(1);
+    }, []);
 
     return (
         <>

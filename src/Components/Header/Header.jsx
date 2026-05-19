@@ -1,15 +1,14 @@
 import { useEffect, useState } from 'react';
 import { Link, useLocation } from 'react-router';
+import { UseApplication } from '../Provider/Provider';
 
 import '/src/index.css';
 import './Header.css';
-import { UseApplication } from '../Provider/Provider';
-
 
 
 export const Header = ({ triggerMenu }) => {
 
-    const { icon, setIcon } = UseApplication()
+    const { icon, setIcon } = UseApplication();
     const location = useLocation();
 
     useEffect(() => {

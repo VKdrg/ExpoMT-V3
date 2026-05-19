@@ -16,7 +16,7 @@ export const ChapterDetail = ({ setModal }) => {
     useEffect(() => {
         setIcon('/SVG/logoLightReduced.svg');
         document.getElementById('menu').style.color = "var(--beige)";
-    }, [])
+    }, []);
 
     return (
         <section id="chapter-detail">

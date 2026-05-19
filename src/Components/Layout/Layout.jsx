@@ -1,10 +1,11 @@
-import './Layout.css';
-
 import { useEffect, useState } from "react";
 import { Link, Outlet } from "react-router";
 import { Header } from "../Header/Header";
 import { MenuItem } from "../MenuItems/MenuItems";
 import { UseApplication } from '../Provider/Provider';
+
+import './Layout.css';
+
 
 export const Layout = () => {
 

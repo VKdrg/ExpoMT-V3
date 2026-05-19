@@ -1,5 +1,6 @@
 import "./LegalMentions.css";
 
+
 export const LegalMentions = () => {
 
     return (

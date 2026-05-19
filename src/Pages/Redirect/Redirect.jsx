@@ -8,11 +8,11 @@ import "/src/index.css";
 
 export const Redirect = () => {
 
-    const { setCurrentChapter } = UseApplication()
+    const { setCurrentChapter } = UseApplication();
 
     useEffect(() => {
-        setCurrentChapter(1)
-    }, [])
+        setCurrentChapter(1);
+    }, []);
 
     return (
         <section id="redirect-section">

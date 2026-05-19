@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react';
-import './Loader.css';
 import { UseApplication } from '../Provider/Provider';
+
+import './Loader.css';
+
 
 export function Loader() {
 

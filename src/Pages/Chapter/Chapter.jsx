@@ -1,9 +1,10 @@
+import { useParams } from "react-router";
 import { useEffect, useState } from "react";
+import { ChapterItem } from "../ChapterItem/ChapterItem";
 import { ChapterCover } from "../ChapterCover/ChapterCover";
 import { ChapterDetail } from "../ChapterDetail/ChapterDetail";
-import { ChapterItem } from "../ChapterItem/ChapterItem";
 import { UseApplication } from "../../Components/Provider/Provider";
-import { useParams } from "react-router";
+
 
 export const Chapter = () => {
 

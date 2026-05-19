@@ -7,12 +7,12 @@ import './MenuItems.css';
 
 export const MenuItem = ({ chapter }) => {
 
-    const { setCurrentChapter, setMenuBurger, setPlayingTransition } = UseApplication()
+    const { setCurrentChapter, setMenuBurger, setPlayingTransition } = UseApplication();
 
     const handleClick = () => {
-        setCurrentChapter(chapter.id)
-        setMenuBurger(false)
-        setPlayingTransition(false)
+        setCurrentChapter(chapter.id);
+        setMenuBurger(false);
+        setPlayingTransition(false);
     }
 
     return (

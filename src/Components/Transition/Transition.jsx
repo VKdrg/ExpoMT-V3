@@ -6,7 +6,7 @@ import "./Transition.css";
 
 export const Transition = () => {
     const transitionRef = useRef(null);
-    const {playingTransition, setPlayingTransition} = UseApplication()
+    const {playingTransition, setPlayingTransition} = UseApplication();
 
     // makes video play
     useEffect(() => {
@@ -19,10 +19,10 @@ export const Transition = () => {
         return () => clearTimeout(timer);
     })
 
-    // should hide video after delay
+    // hides video after delay
     useEffect(() => {
         setTimeout(() => {
-            setPlayingTransition(false)
+            setPlayingTransition(false);
         }, 6000);
     })
 

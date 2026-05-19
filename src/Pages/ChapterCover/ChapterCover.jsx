@@ -1,7 +1,9 @@
 import { useEffect, useState } from 'react';
 import { UseApplication } from '../../Components/Provider/Provider';
 import { Transition } from '../../Components/Transition/Transition';
+
 import './ChapterCover.css';
+
 
 export const ChapterCover = ({ setCover }) => {
     const { playingTransition, chapters, currentChapter } = UseApplication();

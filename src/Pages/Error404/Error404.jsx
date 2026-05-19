@@ -1,5 +1,7 @@
 import { Link } from "react-router";
+
 import "./Error404.css";
+
 
 export const Error404 = () => {
 
