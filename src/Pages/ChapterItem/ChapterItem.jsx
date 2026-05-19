@@ -10,20 +10,51 @@ export const ChapterItem = ({ setModal }) => {
 
     const [width, setWidth] = useState(window.innerWidth)
 
-    const handleResize = () => {
-        setWidth(window.innerWidth)
-        if (window.innerWidth < 1024) {
-            console.log('smol screen');
-            document.getElementById('illu-desktop').src = `${chapters[currentChapter].illuMobile}`;
-        } else {
-            document.getElementById('illu-desktop').src = `${chapters[currentChapter].illuDesktop}`;
-        }
+    // const handleResize = () => {
+    //     setWidth(window.innerWidth)
+    //     if (window.innerWidth < 1024) {
+    //         console.log('smol screen');
+    //         document.getElementById('illu-desktop').src = `${chapters[currentChapter].illuMobile}`;
+    //     } else {
+    //         document.getElementById('illu-desktop').src = `${chapters[currentChapter].illuDesktop}`;
+    //     }
+    // }
+    // useEffect(() => {
+    //     window.addEventListener("resize", handleResize)
+    //     return () => window.removeEventListener('resize', handleResize)
+    // }, [])
+
+    function ResponsiveContent() {
+        const [url, setUrl] = useState('');
+
+        useEffect(() => {
+            const mql = window.matchMedia('(max-width: 1024px)');
+
+            // Initial check
+            const updateUrl = (e) => {
+                setUrl(e.matches ? `${chapters[currentChapter].illuMobile}` : `${chapters[currentChapter].illuDesktop}`);
+            };
+
+            updateUrl(mql);
+            mql.addEventListener('change', updateUrl);
+
+            return () => mql.removeEventListener('change', updateUrl);
+        }, []);
+
+        return (
+            <video
+                id="illu-desktop"
+                autoPlay
+                loop
+                muted
+                src={url}
+                style={{
+                    zIndex: 2
+                }}
+            />
+        )
     }
 
-    useEffect(() => {
-        window.addEventListener("resize", handleResize)
-        return () => window.removeEventListener('resize', handleResize)
-    }, [])
 
     function handleDiscovery() {
         setModal(prev => !prev);
@@ -33,7 +64,7 @@ export const ChapterItem = ({ setModal }) => {
         setCurrentChapter(prev => prev + 1)
         setPlayingTransition(true)
         if (currentChapter === 5) {
-            nav('/redirect')
+            nav('/#/redirect')
         } else {
             const id = Number(currentChapter) + 1
             nav('/chapter/' + id)
@@ -48,13 +79,7 @@ export const ChapterItem = ({ setModal }) => {
             <div className='div-btn-main'>
                 <button className="btn" id="btn-next" onClick={handleClick}>Continuer</button>
             </div>
-            <video
-                id="illu-desktop"
-                autoPlay
-                loop
-                muted
-                src={chapters[currentChapter].illuDesktop}
-            />
+            <ResponsiveContent />
         </section >
     )
 }
