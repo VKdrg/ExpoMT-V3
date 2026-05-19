@@ -17,6 +17,7 @@
   --beige: #FFFBDC;
   --orange: #F76A01;
   --beige-50: #FFFBDC80;
+  --orange-50: #FAB47F;
 
 }
 
@@ -96,7 +97,7 @@ button, .btn-main {
 }
 
 .btn-top {
-  background-color: #FAB47F;
+  background-color: var(--orange-50);
   /* border: 1px solid var(--orange); */
   color: var(--dark-blue);
 }
