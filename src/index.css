@@ -98,7 +98,6 @@ button, .btn-main {
 
 .btn-top {
   background-color: var(--orange-50);
-  /* border: 1px solid var(--orange); */
   color: var(--dark-blue);
 }
 

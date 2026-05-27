@@ -1,15 +1,43 @@
-#chapter-cover{
-    background-color: var(--beige-50);
+#chapter-cover {
     display: flex;
     flex-direction: column;
+    position: relative;
+    background-image: var(--beige-50), url(/illus/paper-texture.jpg);
+    background-blend-mode: luminosity;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
     height: 100vh;
     justify-content: center;
+    align-content: space-between;
     gap: 4rem;
 
-    h2, h3 {
+
+    h2,
+    h3 {
         color: var(--dark-blue);
         text-align: center;
         margin: 0;
         padding-inline: 2.4rem;
     }
+}
+
+#chapter-cover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(/public/illus/paper-texture.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+    z-index: 1;
+}
+
+#chapter-cover > * {
+    position: relative;
+    z-index: 2;
 }
