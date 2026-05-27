@@ -9,7 +9,6 @@ export const ChapterCover = ({ setCover }) => {
     const { playingTransition, chapters, currentChapter } = UseApplication();
 
     function handleClick() {
-        // sets Cover modal to its opposite => "activate" Item modal
         setCover(prev => !prev);
     }
 
