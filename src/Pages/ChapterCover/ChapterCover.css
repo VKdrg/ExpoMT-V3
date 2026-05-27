@@ -38,6 +38,5 @@
 }
 
 #chapter-cover > * {
-    position: relative;
     z-index: 2;
 }

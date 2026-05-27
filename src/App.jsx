@@ -3,7 +3,7 @@ import { Chapter } from './Pages/Chapter/Chapter';
 import { Layout } from './Components/Layout/Layout';
 import { Error404 } from './Pages/Error404/Error404';
 import { Redirect } from './Pages/Redirect/Redirect';
-import { HashRouter, Route, Routes } from 'react-router';
+import { BrowserRouter, HashRouter, Route, Routes } from 'react-router';
 import { AppProvider } from './Components/Provider/Provider';
 import { LegalMentions } from './Pages/LegalMentions/LegalMentions';
 
@@ -12,7 +12,7 @@ import './App.css';
 
 export function App() {
   return (
-    <HashRouter>
+    <BrowserRouter>
       <AppProvider>
         <Routes>
           <Route path='/' element={<Layout />}>
@@ -24,6 +24,6 @@ export function App() {
           </Route>
         </Routes>
       </AppProvider>
-    </HashRouter>
+    </BrowserRouter>
   )
 }
