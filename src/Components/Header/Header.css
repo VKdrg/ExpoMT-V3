@@ -9,7 +9,7 @@ nav {
     z-index: 95;
 
     .modal {
-        top: -100vh;
+        top: -100dvh;
     }
 
     img {

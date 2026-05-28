@@ -1,6 +1,6 @@
 #landing-screen {
     position: absolute;
-    height: 100vh;
+    height: 100dvh;
     width: 100vw;
     background-color: var(--dark-blue);
     overflow: hidden;
@@ -14,7 +14,7 @@
         position: absolute;
         object-fit: cover;
         bottom: 0;
-        min-height: 100vh;
+        min-height: 100dvh;
         max-width: 100%;
     }
 

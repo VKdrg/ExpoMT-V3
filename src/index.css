@@ -22,10 +22,9 @@
 }
 
 html {
-  height: 100vh;
+  height: 100dvh;
   width: 100vw;
   overflow-x: hidden;
-  overflow-y: hidden;
   position: relative;
 }
 
@@ -102,16 +101,16 @@ button, .btn-main {
 }
 
 .btn-top:hover {
-  background-color: #3B2FA433;
+  background-color: #F76A0133;
 }
 
 .btn-main:hover {
   background-color: #3B2FA4BF;
 }
-
+/* 
 .btn:after {
   background-color: var(--mid-blue);
-}
+} */
 
 .div-btn-main {
   width: 100%;

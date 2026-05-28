@@ -1,6 +1,6 @@
 #chapter-item {
     display: flex;
-    height: 100vh;
+    height: 100dvh;
     min-width: 100vw;
     position: absolute;
     top: 0;
@@ -10,18 +10,18 @@
     
     video{
         object-fit: cover;
-        min-height: 100vh;
+        min-height: 100dvh;
         min-width: 100vw;
         z-index: 25;
     }
 
     .modal-detail {
-        height: 100vh;
+        height: 100dvh;
         width: 100%;
         transition: top 0.8s;
         position: fixed;
         left: 0;
-        top: -100vh;
+        top: -100dvh;
         background-color: var(--dark-blue);
         background-blend-mode: multiply;
         backdrop-filter: blur(16px);
