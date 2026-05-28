@@ -12,7 +12,10 @@ export const ChapterItem = ({ setModal }) => {
     const [width, setWidth] = useState(window.innerWidth);
 
     function ResponsiveContent() {
-        const [url, setUrl] = useState('');
+        
+        if(window.location.pathname.includes('redirect')) return;
+
+        const [url, setUrl] = useState(chapters[currentChapter].illuMobile);
 
         useEffect(() => {
             const mql = window.matchMedia('(max-width: 1024px)');
