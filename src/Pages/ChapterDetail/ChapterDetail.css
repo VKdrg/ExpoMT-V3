@@ -6,7 +6,7 @@
     overflow-x: hidden;
     background-color: var(--dark-blue);
     padding-top: 16rem;
-    min-height: 100vh;
+    min-height: 100dvh;
     gap: 4rem;
 
 
